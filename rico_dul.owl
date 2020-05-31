@@ -2542,6 +2542,17 @@ Any Region in a dimensional space that aims at representing time.
     
 
 
+    <!-- https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject -->
+
+    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#IntangibleCulturalObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/>
+        <rdfs:comment>This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.</rdfs:comment>
+        <rdfs:label>Intangible Cultural Object</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/arco/ontology/arco/IntangibleCulturalProperty"/>
+    </owl:Class>
+    
+
+
     <!-- https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter -->
 
     <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter">
@@ -2554,23 +2565,35 @@ The definition of this class was deemed necessary as it is central to the domain
     
 
 
-    <!-- https://w3id.org/arco/ontology/arco/CulturalProperty -->
+    <!-- https://rico-ontology.github.io/rico_dul.owl#InterpretedRole -->
 
-    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/CulturalProperty">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
-        <rdfs:comment>This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.</rdfs:comment>
-        <rdfs:isDefinedBy>http://dati.beniculturali.it/lodview-arco-onto/ontology/arco</rdfs:isDefinedBy>
+    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#InterpretedRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:comment>This subclass of the Role class was specifically created to designate roles assigned to (mostly) cultural objects within the interpretative encounter by an interpreter. That is, interpreted roles are roles that are solely defined by the interpretation criterion conceptualized by a Person (eg., &quot;carrier of meaning&quot;)</rdfs:comment>
+        <rdfs:label>Interpreted Role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/arco/ontology/arco/TangibleCulturalProperty -->
+    <!-- https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject -->
 
-    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty">
+    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/CulturalProperty"/>
-        <rdfs:comment>This class represents a tangible cultural property, either immovable or movable.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
-        <rdfs:label>Tangible Cultural Property</rdfs:label>
+        <rdfs:comment>This class represents a tangible cultural object, which may be the object of a heuristic interpretation of meaning by a person.</rdfs:comment>
+        <rdfs:label rdf:resource="Tangible Cultural Object"/>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/CulturalProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/CulturalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <rdfs:comment>This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.
+
+In RICO, this class and its descendants are reused to represent the cultural objects that are the objects of interpretation, mainly so that the knowledge bases emerging from its use can be matched to ArCo and other resources in a way that augments the amount of knowledge available of such objects.</rdfs:comment>
+        <rdfs:isDefinedBy>http://dati.beniculturali.it/lodview-arco-onto/ontology/arco</rdfs:isDefinedBy>
     </owl:Class>
     
 
