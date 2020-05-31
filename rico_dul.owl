@@ -3451,6 +3451,12 @@ A Plan that defines Role(s), Task(s), and a specific structure for tasks to be e
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul.owl#thisisatest -->
+
+    <owl:Class rdf:about="https://rico-ontology.github.io/rico_dul.owl#thisisatest"/>
 </rdf:RDF>
 
 
