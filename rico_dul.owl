@@ -2588,6 +2588,39 @@ Any Region in a dimensional space that aims at representing time.
 The definition of this class was deemed necessary as it is central to the domain that RICO aims to formalize. Having this class allows for further specification down the road for the kinds of interpretative encounters that may take place (for example, mediated or unmediated experiences in museums, physical or virtual encounters, etc.)</rdfs:comment>
         <rdfs:label>Interpretative Encounter</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/CulturalProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/CulturalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <rdfs:comment>This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.</rdfs:comment>
+        <rdfs:isDefinedBy>http://dati.beniculturali.it/lodview-arco-onto/ontology/arco</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/Interpretation -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/context-description/Interpretation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <rdfs:comment>This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:the authorship attribution, commission, etc.)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/InterpretationCriterion -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/context-description/InterpretationCriterion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+        <rdfs:comment>This class represents the criterion that motivated an interpretation.
+
+In RICO, an interpretation criterion is what defines the interpreted role of a cultural object and the tasks that it fulfills under that role. For example, an interpretation may define a cultural object’s role as meaning carrier, which includes the task of evoking the sentiment of happiness, the task of evoking the abstract concept of freedom, and the task of evoking the concrete place “Paris”. An interpretation criterion is conceptualized by a Person, and can be expressed as an information object (such as a text) that is realized in some way (like a txt file).</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/arco/ontology/context-description</rdfs:isDefinedBy>
+        <rdfs:label>Interpretation Criterion</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
