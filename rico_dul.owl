@@ -779,7 +779,6 @@ A relation between an object and a role, e.g. &apos;student&apos; is the role of
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
-        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
@@ -885,22 +884,6 @@ A relation between an information realization and an information object, e.g. th
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
-        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.
-</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label xml:lang="en">satisfies</rdfs:label>
-        <rdfs:label xml:lang="it">soddisfa</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept">
@@ -946,6 +929,8 @@ A generic relation holding between a Description and a Concept. In order to be u
 
     <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"/>
         <rdfs:comment>This property relates an authorship, dating, commission, or other interpretation situations, to the reason or criterion which led to that interpretation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
         <rdfs:label>Has Interpretation Criterion</rdfs:label>
@@ -1396,12 +1381,6 @@ Any region in a dimensional space (a dimensional space is a maximal Region), whi
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 A view, consistent with (&apos;satisfying&apos;) a Description, on a set of entities. It can also be seen as a &apos;relational context&apos; created by an observer on the basis of a &apos;frame&apos; (i.e. a Description). For example, a PlanExecution is a context including some actions executed by agents according to certain parameters and expected tasks to be achieved from a Plan; a DiagnosedSituation is a context of observed entities that is interpreted on the basis of a Diagnosis, etc. Situation is also able to represent reified n-ary relations, where isSettingFor is the top-level relation for all binary projections of the n-ary relation. If used in a transformation pattern for n-ary relations, the designer should take care of creating only one subclass of Situation for each n-ary relation, otherwise the &apos;identification constraint&apos; (Calvanese et al., IJCAI 2001) could be violated.
 </rdfs:comment>
