@@ -950,6 +950,30 @@ A generic relation holding between a Description and a Concept. In order to be u
     
 
 
+    <!-- https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+        <rdfs:comment>This property relates an authorship, dating, commission, or other interpretation situations, to the reason or criterion which led to that interpretation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label>Has Interpretation Criterion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInterpretationCriterionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+        <rdfs:domain rdf:resource="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"/>
+        <rdfs:range rdf:resource="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+        <rdfs:comment>This property relates an interpretation criterion to the interpretation that was based on that criterion.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/ontology/context-description"/>
+        <rdfs:label>is interpretation criterion of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
