@@ -6,12 +6,17 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:rico_dul="https://rico-ontology.github.io/rico_dul.owl#">
     <owl:Ontology rdf:about="https://rico-ontology.github.io/rico_dul.owl">
         <owl:versionIRI rdf:resource="https://rico-ontology.github.io/rico_dul.owl"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO is an ontology</rdfs:comment>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delfina Sol Pandiani</dc:creator>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO Ontology - Related Interpretations of Cultural Objects</terms:title>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</terms:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO Ontology is based on DOLCE DnS Ultralite, and was specifically developed for the formal representation of information surrounding the interpretations of cultural objects.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICO (Related Interpretations of Cultural Objects)</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created by Delfina Sol Pandiani as an extension of Aldo Gangemi&apos;s DOLCE DnS Ultralite, specifically for the formal representation of information surrounding the interpretations of cultural objects.</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -35,6 +40,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -50,6 +61,12 @@
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul.owl#Rights -->
+
+    <owl:AnnotationProperty rdf:about="https://rico-ontology.github.io/rico_dul.owl#Rights"/>
     
 
 
