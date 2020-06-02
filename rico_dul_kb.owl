@@ -1610,6 +1610,8 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+        <Conceptualization:isBelievedBy rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
+        <rdfs:comment>&quot;The Archaic kouros is not just the image of a well-groomed young man, but also a sensuous figure.&quot;</rdfs:comment>
         <rdfs:comment>Vinzenz Brinkmann&apos;s interpretation of the Kouros of Tenea as a sensous, vital and expressive figure.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1619,6 +1621,8 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"/>
+        <Conceptualization:isAssumedBy rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
+        <rdfs:comment>&quot;The eyebrows, which lavishly arched over the eyes to end at the temples, and the elegantly stylized pubic hair of the early kouroi lend the figures a particular note of manicured extravagance. Sensous vitality-with an expressiveness that may be surprising to the modern viewer-radiates from the ornamental emphasis on the painted nipples. Their broad red aereolas attract attentiona nd contribute to the eroticism of the figures.&quot; (page 28, Brinkmann et al 2017)</rdfs:comment>
         <rdfs:comment>The interpretation criterion utilized by Vinzenz Brinkmann in 2017 for his interpretation of the Kouros of Tenea.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1628,8 +1632,11 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#InterpretativeEncounter"/>
+        <hasLocation rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Glypothek"/>
+        <hasParticipant rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
         <hasTimeInterval rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#2017"/>
         <involvesAgent rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
+        <isEventIncludedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
         <rdfs:comment>The interpretative encounter between Vinzenz Brinkmann and the Reconstruction of the kouros from Tenea that took place in 2017 in Glypothek, Munich.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1639,6 +1646,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+        <isRoleOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
         <rdfs:comment>Role that a person takes when encountering a cultural object and assuming that it carries meaning.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1662,6 +1670,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
         <Conceptualization:assumes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
         <Conceptualization:believes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
         <hasRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter"/>
+        <isAgentInvolvedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
         <rdfs:comment>Vinzenz Brinkmann (b. 1958)</rdfs:comment>
         <rdfs:isDefinedBy>http://id.loc.gov/authorities/names/nr96008110</rdfs:isDefinedBy>
         <rdfs:label>Vinzenz Brinkmann</rdfs:label>
