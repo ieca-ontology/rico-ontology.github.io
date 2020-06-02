@@ -1596,6 +1596,43 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     
 
 
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker">
+        <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/>
+        <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness"/>
+        <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality"/>
+        <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Vitality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#ArchedEyebrows -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#ArchedEyebrows">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#DecoratedAreolas -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#DecoratedAreolas">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Glypothek -->
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Glypothek">
@@ -1656,9 +1693,51 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#TangibleCulturalObject"/>
+        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#ArchedEyebrows"/>
+        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#DecoratedAreolas"/>
+        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Polychrome"/>
+        <hasQuality rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#StylizedPubicHair"/>
+        <hasRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier"/>
+        <isObjectIncludedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
+        <isParticipantIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
         <rdfs:comment>The Kouros of Tenea (2015) in Liebeghaus Sculpture Collection (Polychromy Research Project) is a polychrome reconstruction of the original Greek (ca. 530 BC) Kouros now present in Glypothek, Munich.</rdfs:comment>
         <rdfs:label>Kouros of Tenea</rdfs:label>
         <rdfs:seeAlso>http://www.stiftung-archaeologie.de/Kouros_from_Tenea_fullsize.html</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier">
+        <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#InterpretedRole"/>
+        <hasTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Polychrome -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Polychrome">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#StylizedPubicHair -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#StylizedPubicHair">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <isQualityOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
     </owl:NamedIndividual>
     
 
@@ -1670,11 +1749,20 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
         <Conceptualization:assumes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
         <Conceptualization:believes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
         <hasRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter"/>
+        <hasSetting rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#2017"/>
         <isAgentInvolvedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
         <rdfs:comment>Vinzenz Brinkmann (b. 1958)</rdfs:comment>
         <rdfs:isDefinedBy>http://id.loc.gov/authorities/names/nr96008110</rdfs:isDefinedBy>
         <rdfs:label>Vinzenz Brinkmann</rdfs:label>
         <rdfs:seeAlso>https://viaf.org/viaf/17399289/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Vitality -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Vitality">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
     </owl:NamedIndividual>
     
 
