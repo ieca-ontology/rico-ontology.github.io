@@ -9,7 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:rico_dul="https://rico-ontology.github.io/rico_dul.owl#"
-     xmlns:Conceptualization="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#">
+     xmlns:Conceptualization="http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl#"
+     xmlns:context-description="https://w3id.org/arco/ontology/context-description/">
     <owl:Ontology rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl">
         <owl:versionIRI rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delfina Sol Pandiani</dc:creator>
@@ -1600,6 +1601,8 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#Evoker"/>
+        <isTaskDefinedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
+        <isTaskOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier"/>
         <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness"/>
         <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality"/>
         <rico_dul:taskEvokes rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Vitality"/>
@@ -1629,6 +1632,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Expressiveness">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
     
 
@@ -1637,6 +1641,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Glypothek">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <isLocationOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
         <rdfs:comment>Glyptothek München is a museum in Munich,  commissioned by the Bavarian King Ludwig I to house his collection of Greek and Roman sculptures.</rdfs:comment>
         <rdfs:seeAlso>https://viaf.org/viaf/156625362/</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -1648,6 +1653,9 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/context-description/Interpretation"/>
         <Conceptualization:isBelievedBy rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
+        <includesEvent rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
+        <includesObject rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
+        <context-description:hasInterpretationCriterion rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
         <rdfs:comment>&quot;The Archaic kouros is not just the image of a well-groomed young man, but also a sensuous figure.&quot;</rdfs:comment>
         <rdfs:comment>Vinzenz Brinkmann&apos;s interpretation of the Kouros of Tenea as a sensous, vital and expressive figure.</rdfs:comment>
     </owl:NamedIndividual>
@@ -1659,6 +1667,9 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1">
         <rdf:type rdf:resource="https://w3id.org/arco/ontology/context-description/InterpretationCriterion"/>
         <Conceptualization:isAssumedBy rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
+        <definesRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier"/>
+        <definesTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+        <context-description:isInterpretationCriterionOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
         <rdfs:comment>&quot;The eyebrows, which lavishly arched over the eyes to end at the temples, and the elegantly stylized pubic hair of the early kouroi lend the figures a particular note of manicured extravagance. Sensous vitality-with an expressiveness that may be surprising to the modern viewer-radiates from the ornamental emphasis on the painted nipples. Their broad red aereolas attract attentiona nd contribute to the eroticism of the figures.&quot; (page 28, Brinkmann et al 2017)</rdfs:comment>
         <rdfs:comment>The interpretation criterion utilized by Vinzenz Brinkmann in 2017 for his interpretation of the Kouros of Tenea.</rdfs:comment>
     </owl:NamedIndividual>
@@ -1683,6 +1694,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+        <hasSetting rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#2017"/>
         <isRoleOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
         <rdfs:comment>Role that a person takes when encountering a cultural object and assuming that it carries meaning.</rdfs:comment>
     </owl:NamedIndividual>
@@ -1712,6 +1724,8 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier">
         <rdf:type rdf:resource="https://rico-ontology.github.io/rico_dul.owl#InterpretedRole"/>
         <hasTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+        <isRoleDefinedIn rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretationCriterion1"/>
+        <isRoleOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#KourosOfTenea"/>
     </owl:NamedIndividual>
     
 
@@ -1729,6 +1743,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Sensuality">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
     
 
@@ -1763,6 +1778,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Vitality">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
     
 
@@ -1773,6 +1789,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
         <isSettingFor rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpreter"/>
         <isSettingFor rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#VinzenzBrinkmann"/>
+        <isTimeIntervalOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#InterpretativeEncounter1"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
