@@ -1670,7 +1670,7 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
         <definesRole rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#MeaningCarrier"/>
         <definesTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
         <context-description:isInterpretationCriterionOf rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#Interpretation1"/>
-        <rdfs:comment>&quot;The eyebrows, which lavishly arched over the eyes to end at the temples, and the elegantly stylized pubic hair of the early kouroi lend the figures a particular note of manicured extravagance. Sensous vitality-with an expressiveness that may be surprising to the modern viewer-radiates from the ornamental emphasis on the painted nipples. Their broad red aereolas attract attentiona nd contribute to the eroticism of the figures.&quot; (page 28, Brinkmann et al 2017)</rdfs:comment>
+        <rdfs:comment>&quot;The eyebrows, which lavishly arched over the eyes to end at the temples, and the elegantly stylized pubic hair of the early kouroi lend the figures a particular note of manicured extravagance. Sensuous vitality-with an expressiveness that may be surprising to the modern viewer-radiates from the ornamental emphasis on the painted nipples. Their broad red areolas attract attention and contribute to the eroticism of the figures.&quot; (page 28, Brinkmann et al 2017)</rdfs:comment>
         <rdfs:comment>The interpretation criterion utilized by Vinzenz Brinkmann in 2017 for his interpretation of the Kouros of Tenea.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1777,6 +1777,15 @@ In RICO, an interpretation criterion is what defines the interpreted role of a c
     <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Vitality -->
 
     <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Vitality">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://rico-ontology.github.io/rico_dul_kb.owl#Youth -->
+
+    <owl:NamedIndividual rdf:about="https://rico-ontology.github.io/rico_dul_kb.owl#Youth">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
         <rico_dul:isEvokedbyTask rdf:resource="https://rico-ontology.github.io/rico_dul_kb.owl#AbstractConceptEvoker"/>
     </owl:NamedIndividual>
