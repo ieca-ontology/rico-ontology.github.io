@@ -68,6 +68,10 @@ h6 {
   color: #9C3E3E;
 }
 
+#livestreamdiv {
+  padding: 0;
+}
+
 .page-section h3.section-subheading {
   font-size: 16px;
   font-weight: 400;
@@ -78,24 +82,37 @@ h6 {
 }
 
 .live {
-  background-color: #212529;
+  background-color: #74C7B0;
   color: #FFF;
-  padding-top: 200px;
+  padding-top: 50px;
 }
 
 .col-live {
   padding-right: 50px;
 }
 
+#watchlive {
+  color: #9C3E3E;
+}
 
 /*added*/
 
+.when {
+  padding-bottom: 3em;
+}
+
+.datea {
+  color: white !important;
+}
 .nav-tabs .nav-link {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
 }
 
+.nav {
+  background-color: red;
+}
 
 hr {
   border: 6px solid #74C7B0;
@@ -104,6 +121,7 @@ hr {
   margin-left: 0;
   width: 50%;
 }
+
 
 /*added*/
 
@@ -143,16 +161,17 @@ img::-moz-selection {
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
+  color: white;
 }
 
 .btn-primary {
-  background-color: #e2c576;
-  border-color: #e2c576;
+  background-color: #9e5757;
+  border-color: #9e5757;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #ceb46c !important;
-  border-color: #ceb46c !important;
+  background-color: #9C3E3E !important;
+  border-color: #9C3E3E !important;
   color: white;
 }
 
@@ -171,7 +190,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #e2c576;
+  background-color: #9C3E3E;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -197,6 +216,21 @@ img::-moz-selection {
   color: #ceb46c;
 }
 
+#mainNav.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #9C3E3E;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.25em;
+  padding:12px 0;
+}
+
+.navbar-collapse {
+  background-color: #9C3E3E;
+}
+
 #martina {
   align-content: left;
   padding-top: 4em;
@@ -217,6 +251,11 @@ img::-moz-selection {
   padding-top: 4em;
 }
 
+.emailaddress {
+  font-size: .75em;
+}
+
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -235,11 +274,15 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #74C7B0;
+    background-color: #9C3E3E;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
-    padding: 12px 0;
+    padding:20px 0;
+  }
+
+  .navbar-collapse {
+    background-color: transparent;
   }
 }
 
@@ -655,9 +698,13 @@ header.masthead .intro-text .intro-heading {
   }
 
   .team-member img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border: 5px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .team-member {
+    margin: 1em;
   }
 
 }
@@ -712,6 +759,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .team-member {
+  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
 }

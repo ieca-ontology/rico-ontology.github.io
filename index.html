@@ -91,13 +91,12 @@
       <div class="row">
         <div class="col-lg-12">
           <h2 class="section-heading text-uppercase">About RICO</h2>
-          <h3 class="section-subheading mb-3">Subtitle</h3>
-          <p style="text-align:left;">Starting from, on one hand, the limitations of the current representations of the interpreted content of cultural objects and, on the other hand, the insights provided by advances in ODPs and the potential of the D&S pattern, I set out to develop a conceptual model and an ontological and technical infrastructure to investigate the relationships between alternative interpretations of cultural objects. The initial focus was to be able to formally represent interpretations documented in natural language, such as in literary works or comments on the internet.</p>
-          <p style="text-align:left;">As such, my first objective was to conceptualize and formalize in an ontology the context and content of natural language interpretations of cultural objects by persons. I developed a model to semantically represent the relationships between cultural artifacts, cognitive agents, interpretative efforts, interpretable objects, interpreted objects, and resulting interpretations. I did this by investigating and applying ontology design patterns (ODP) such as descriptions and situations, information realization, and time indexed person role.</p>
-          <p style="text-align:left;">The OWL file for RICO is available <a href="https://rico-ontology.github.io/RICOWidoco/rico_dul.owl">here</a></p>
-          <p style="text-align:left;">The documentation generated through <a href="https://github.com/dgarijo/Widoco">Widoco</a> is available <a href="https://rico-ontology.github.io/RICOWidoco/index-en.html">here</a></p>
-          <p style="text-align:left;">The evaluation generated with <a href="http://oops.linkeddata.es/">OOPS!</a> is available <a href="https://rico-ontology.github.io/oops.html">here</a></p>
-          <p style="text-align:left;"><a href=""></a></p>
+          <h3 class="section-subheading mb-3">Formalizing the Domain of Interpretative Encounters with Cultural Artifacts</h3>
+          <p style="text-align:left;">Formally representing alternative interpretations of the conceptual information that a cultural object may carry is a challenging task. It is generally recognized that formally represented objects may be conceptual objects carrying information, as mirrored in the Ontology Design Pattern (ODP) <a href="http://ontologydesignpatterns.org/wiki/Submissions:Information_realization">Information Realization</a>. As such, cultural object’s physical realizations may be connected to information objects that hold their conceptual meaning. Nevertheless, with this approach, complexity arises when representations of multiple and alternative interpretations of the same information object are required, as traditionally the formalization of an object’s information content has required an unconscious selection of a model. </p>
+          <p style="text-align:left;">When it comes to the interpretative encounters that take place between people and cultural objects housed in Cultural Heritage (CH) institutions, an ontological model that allows for their representation is badly needed. CH institutions are increasingly interested in representing the interpretations that the public has about their cultural artifacts, including the content and context of such interpretations.</p>
+          <p style="text-align:left;">The <i>Related Interpretations of Cultural Objects</i> ontology, or RICO, is an attempt to provide a conceptual and ontological model to represent such interpretative encounters, and to investigate the content, context, and relationships between alternative interpretations of cultural objects.</p>
+          <p style="text-align:left;">RICO is based on the <a href=“http://www.loa.istc.cnr.it/old/Papers/ODBASE-CONTEXT.pdf”>Descriptions and Situations ontology</a> (D&S), an extension of the DOLCE foundational ontology that attempts to define a theory that supports a first-order manipulation of theories and models.</p>
+          <p style="text-align:left;"></p>
           <p style="text-align:left;"><a href=""></a></p>
       </div>
       </div>
@@ -111,23 +110,43 @@
           <h2 class="section-heading text-uppercase">Competency Questions</h2>
           <h3 class="section-subheading mb-3">Requirements of the Domain</h3>
           <hr>
-          <p style="text-align:left;">The starting point for developing the RICO ontology was through asking interesting questions. These were the questions behind my analysis and the infrastructure of the ontology:</p>
-          <p style="text-align:left;"></p>
-        </div>
-      </div>
-    </div>
-
-    <!--definitions -->
-    </div>
-      <div class="container project" id="definitions">
-      <div class="row">
-        <div class="col-lg-12">
-          <hr>
-          <h2 class="section-heading text-uppercase">Definition of Classes and Properties</h2>
-          <h3 class="section-subheading mb-3">Reusing and Defining from Scratch</h3>
-          <hr>
-          <p style="text-align:left;"></p>
-          <p style="text-align:left;"></p>
+          <p style="text-align:left;">The starting point for developing the RICO ontology was through asking competency questions regarding the ontology requirements, so as to understand what kinds of concepts and relationships it would be useful to formalize.</p>
+          <ul>
+            <li>General
+              <ul>
+                <li>What are the relationships between a cultural object, an interpretation of such an object, the interpreter, and the context of interpretation?</li>
+                <li>What kinds of  roles do cultural objects play in the context of an interpretation?</li>
+                <li>What kinds of tasks do cultural objects fulfill when they are interpreted to carry meaning?</li>
+              </ul>
+            </li>
+            <li>Contexts of Interpretations
+              <ul>
+                <li>How many interpretations have been recorded for a cultural object, and how do they relate to the tangible object?</li>
+                <li>What is the context in which an interpretation takes place? (physical/virtual/public/ private/date/mediated/unmediated/first time/agent identity/etc.)</li>
+              </ul>
+            </li>
+            <li>Contents of Interpretations
+              <ul>
+                <li>Within an interpretation, does the cultural object carry/evoke a sentiment?</li>
+                <li>For a sentiment evoked by a cultural object, is it connected to the object as a whole or to a (physical or conceptual) part of it?</li>
+                <li>Within an interpretation, does the cultural object carry/evoke concrete concepts (such as persons/dates/events/times/objects)?</li>
+                <li>For a concrete concept interpreted in a cultural object, is it related to the object as a whole or to a (physical or conceptual) part of it?</li>
+                <li>Within an interpretation, does the cultural object carry/evoke a high level abstract concept (such as freedom, love, revolution, etc.?</li>
+                <li>For an abstract concept interpreted in a cultural object, is it related to the object as a whole or to a (physical or conceptual) part of it?</li>
+              </ul>
+            </li>
+            <li>Relationships between alternative interpretations of the same cultural object
+              <ul>
+                <li>How often is a sentiment present in interpretation events of a cultural object?</li>
+                <li>Are there recurrent topics in the interpretation of a cultural object?</li>
+                <li>How often is a specific concept present in interpretation events of a cultural object?</li>
+                <li>How often is a specific abstract concept present in interpretation events of a cultural object?</li>
+                <li>Is there a pattern in the kinds of concepts evoked by a specific cultural object?</li>
+                <li>Is there a pattern in the kinds of concepts evoked by a specific class of cultural object?</li>
+                <li>Do interpretations about a cultural object reference more abstract or concrete concepts?</li>
+              </ul>
+            </li>
+          </ul>
           <p style="text-align:left;"></p>
         </div>
       </div>
@@ -142,12 +161,21 @@
           <h2 class="section-heading text-uppercase">Documentation</h2>
           <h3 class="section-subheading mb-3">Powered by Widoco</h3>
           <hr>
+          <p style="text-align:left;">Here you can access the OWL file for the RICO ontology in OWL format. I developed this file through the use of <a href="https://protege.stanford.edu/">Protege</a>.</p>
+          <p style="text-align:left;"><a href="https://rico-ontology.github.io/RICOWidoco/rico_dul.owl"><button class="button black gradient ae-4">Download the OWL file for RICO</button></a></p>
+          <div class="iframee">
+            <iframe id="webvowl" src="https://rico-ontology.github.io/RICOWidoco/index-en.html"></iframe>
+          </div>
           <p style="text-align:left;"></p>
           <p style="text-align:left;"></p>
           <p style="text-align:left;"></p>
         </div>
       </div>
     </div>
+
+
+              <p style="text-align:left;">The documentation generated through <a href="https://github.com/dgarijo/Widoco">Widoco</a> is available <a href="https://rico-ontology.github.io/RICOWidoco/index-en.html">here</a></p>
+              <p style="text-align:left;">The evaluation generated with <a href="http://oops.linkeddata.es/">OOPS!</a> is available <a href="https://rico-ontology.github.io/oops.html">here</a></p>
 
     <!--evaluation -->
     </div>
