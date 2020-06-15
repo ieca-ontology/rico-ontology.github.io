@@ -15,7 +15,7 @@ p {
 }
 
 a {
-  color: #74C7B0;
+  color: #FC4445;
 }
 
 a:hover {
@@ -63,14 +63,14 @@ h6 {
 }
 
 .project {
-  padding-bottom: 5em;
+  padding-bottom: 10em;
 }
 
 .project h2.section-heading {
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #9C3E3E;
+  color: #FC4445;
   font-family: 'Abel', sans-serif;
 
 }
@@ -131,6 +131,10 @@ hr {
 }
 
 
+.button {
+  background-color: #55BCC9;
+  border-color: #55BCC9;
+}
 /*added*/
 
 @media (min-width: 768px) {
@@ -173,8 +177,8 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #9e5757;
-  border-color: #9e5757;
+  background-color: #3FEEE6;
+  border-color: #3FEEE6;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -184,7 +188,7 @@ img::-moz-selection {
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem #ceb46c !important;
+  box-shadow: 0 0 0 0.2rem #FC4445 !important;
 }
 
 #mainNav {
@@ -203,12 +207,12 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: #e2c576;
+  color: #FC4445;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Abel, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #ceB46c;
+  color: #FC4445;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -221,13 +225,13 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ceb46c;
+  color: #FC4445;
 }
 
 #mainNav.navbar-shrink {
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #9C3E3E;
+  background-color: #FC4445;
 }
 
 #mainNav.navbar-shrink .navbar-brand {
@@ -263,7 +267,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #9C3E3E;
+    background-color: #FC4445;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -315,13 +319,13 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 18em;
-  /* font-weight: 700; */
+  font-size: 20em;
+  font-weight: 900;
   line-height: 90px;
   margin-bottom: 25px;
   color: black;
   /* text-shadow: -2px 3px 3px rgba(32, 37, 43, 1); */
-  font-family: 'Abel', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #allprojects {
@@ -351,7 +355,7 @@ header.masthead .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
     /* text-shadow: -2px 3px 3px rgba(32, 37, 43, 1); */
-    font-family: 'Abel', sans-serif;
+    font-family: 'Raleway', sans-serif;
     }
 }
 
@@ -868,7 +872,7 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: #3FEEE6;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
